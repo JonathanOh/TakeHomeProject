@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45022B012055FC9600711026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45022B002055FC9600711026 /* AppDelegate.swift */; };
+		45022B032055FC9600711026 /* CatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45022B022055FC9600711026 /* CatViewController.swift */; };
+		45022B082055FC9600711026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45022B072055FC9600711026 /* Assets.xcassets */; };
+		45022B0B2055FC9600711026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45022B092055FC9600711026 /* LaunchScreen.storyboard */; };
+		45022B132055FD9500711026 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45022B122055FD9500711026 /* HTTPManager.swift */; };
+		45022B152055FE2200711026 /* CatRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45022B142055FE2200711026 /* CatRequest.swift */; };
+		45022B172055FEE800711026 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45022B162055FEE800711026 /* Cat.swift */; };
+		45022B192056009300711026 /* CatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45022B182056009300711026 /* CatCell.swift */; };
+		45022B1B205609EC00711026 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45022B1A205609EC00711026 /* CustomImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		45022AFD2055FC9600711026 /* TakeHomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45022B002055FC9600711026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45022B022055FC9600711026 /* CatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewController.swift; sourceTree = "<group>"; };
+		45022B072055FC9600711026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45022B0A2055FC9600711026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45022B0C2055FC9600711026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45022B122055FD9500711026 /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		45022B142055FE2200711026 /* CatRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRequest.swift; sourceTree = "<group>"; };
+		45022B162055FEE800711026 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		45022B182056009300711026 /* CatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCell.swift; sourceTree = "<group>"; };
+		45022B1A205609EC00711026 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45022AFA2055FC9600711026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45022AF42055FC9600711026 = {
+			isa = PBXGroup;
+			children = (
+				45022AFF2055FC9600711026 /* TakeHomeProject */,
+				45022AFE2055FC9600711026 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45022AFE2055FC9600711026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45022AFD2055FC9600711026 /* TakeHomeProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45022AFF2055FC9600711026 /* TakeHomeProject */ = {
+			isa = PBXGroup;
+			children = (
+				45022B002055FC9600711026 /* AppDelegate.swift */,
+				45022B1F20560D0B00711026 /* HTTP */,
+				45022B1D20560CDD00711026 /* Controller */,
+				45022B1E20560CEE00711026 /* View */,
+				45022B1C20560CCE00711026 /* Model */,
+				45022B072055FC9600711026 /* Assets.xcassets */,
+				45022B092055FC9600711026 /* LaunchScreen.storyboard */,
+				45022B0C2055FC9600711026 /* Info.plist */,
+			);
+			path = TakeHomeProject;
+			sourceTree = "<group>";
+		};
+		45022B1C20560CCE00711026 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45022B162055FEE800711026 /* Cat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45022B1D20560CDD00711026 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45022B022055FC9600711026 /* CatViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		45022B1E20560CEE00711026 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45022B1A205609EC00711026 /* CustomImageView.swift */,
+				45022B182056009300711026 /* CatCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45022B1F20560D0B00711026 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				45022B122055FD9500711026 /* HTTPManager.swift */,
+				45022B142055FE2200711026 /* CatRequest.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45022AFC2055FC9600711026 /* TakeHomeProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45022B0F2055FC9600711026 /* Build configuration list for PBXNativeTarget "TakeHomeProject" */;
+			buildPhases = (
+				45022AF92055FC9600711026 /* Sources */,
+				45022AFA2055FC9600711026 /* Frameworks */,
+				45022AFB2055FC9600711026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TakeHomeProject;
+			productName = TakeHomeProject;
+			productReference = 45022AFD2055FC9600711026 /* TakeHomeProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45022AF52055FC9600711026 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jonathan Oh";
+				TargetAttributes = {
+					45022AFC2055FC9600711026 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 45022AF82055FC9600711026 /* Build configuration list for PBXProject "TakeHomeProject" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45022AF42055FC9600711026;
+			productRefGroup = 45022AFE2055FC9600711026 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45022AFC2055FC9600711026 /* TakeHomeProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45022AFB2055FC9600711026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45022B0B2055FC9600711026 /* LaunchScreen.storyboard in Resources */,
+				45022B082055FC9600711026 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45022AF92055FC9600711026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45022B192056009300711026 /* CatCell.swift in Sources */,
+				45022B152055FE2200711026 /* CatRequest.swift in Sources */,
+				45022B032055FC9600711026 /* CatViewController.swift in Sources */,
+				45022B1B205609EC00711026 /* CustomImageView.swift in Sources */,
+				45022B172055FEE800711026 /* Cat.swift in Sources */,
+				45022B132055FD9500711026 /* HTTPManager.swift in Sources */,
+				45022B012055FC9600711026 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		45022B092055FC9600711026 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45022B0A2055FC9600711026 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45022B0D2055FC9600711026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45022B0E2055FC9600711026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45022B102055FC9600711026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQ85KX5DW2;
+				INFOPLIST_FILE = TakeHomeProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = esohjay.TakeHomeProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45022B112055FC9600711026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQ85KX5DW2;
+				INFOPLIST_FILE = TakeHomeProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = esohjay.TakeHomeProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45022AF82055FC9600711026 /* Build configuration list for PBXProject "TakeHomeProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45022B0D2055FC9600711026 /* Debug */,
+				45022B0E2055FC9600711026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45022B0F2055FC9600711026 /* Build configuration list for PBXNativeTarget "TakeHomeProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45022B102055FC9600711026 /* Debug */,
+				45022B112055FC9600711026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45022AF52055FC9600711026 /* Project object */;
+}
